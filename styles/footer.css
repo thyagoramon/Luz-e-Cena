@@ -1,0 +1,148 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-texto);
+    color: var(--cor-de-fundo-input);
+}
+
+.rodape__superior {
+    height: 64px;
+    width: 100vw;    
+    background-image: url(../images/tarjeta.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rodape__meio {
+    background-color: var(--cor-texto);
+    width: 100vw;
+    padding: 80px 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    width: 20%;
+}
+
+.rodape__marca img {
+    height: 48px;
+}
+
+.rodape__marca h4 {
+    font-size: var(--font-size-m);
+}
+
+.rodape__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.rodape__nav__secao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.rodape__nav__secao h4 {
+    font-size: var(--font-size-m);
+}
+
+.rodape__nav__item, .rodape__nav__link {
+    font-size: var(--font-size-s);
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+}
+
+.rodape__nav__link:hover {
+    color: var(--cor-texto-destaque);
+}
+
+.rodape__nav__redes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.rodape__nav__icone {
+    transition: 0.5s;
+}
+
+.rodape__nav__icone:hover {
+    scale: 1.2;
+}
+
+.rodape__inferior {
+    width: 100vw;
+    background-color: var(--cor-de-fundo-input);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: var(--font-size-s);
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.rodape__inferior a {
+    color: var(--cor-texto);
+    font-size: var(--font-size-s);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1700px) {
+    .rodape__meio {
+        padding: 80px 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .rodape__meio {
+        padding: 80px 5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .rodape__marca {
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+    }
+    .rodape__nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .rodape__meio {
+        padding: 40px 5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .rodape__marca {
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+    }
+    .rodape__nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .rodape__nav__secao {
+        align-items: center;
+        gap: 8px;
+    }
+}

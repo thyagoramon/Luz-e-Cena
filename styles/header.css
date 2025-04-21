@@ -1,0 +1,146 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20%;
+}
+
+.cabecalho__logo img {
+    height: 48px;
+}
+
+.cabecalho__link {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.cabecalho__link:hover {
+    color: var(--cor-texto-destaque);
+}
+
+.cabecalho__local {
+    border: none;
+    background-color: var(--cor-de-fundo-input);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 25%;
+    outline: none; /*remove o contorno ao clicar*/
+    transition: 0.5s;
+}
+
+.cabecalho__local:hover {
+    scale: 1.05;
+}
+
+.cabecalho__local::placeholder {
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: var(--font-size-s);
+    background-image: url(../images/location_on.svg);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+}
+
+.cabecalho__icones {
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho__icones__icones {
+    transition: 0.5s;
+}
+
+.cabecalho__icones__icones:hover {
+    scale: 1.2;
+}
+
+.cabecalho__menu {
+    display: none;
+}
+
+.cabecalho__menu input {
+    display: none;
+}
+
+@media screen and (max-width: 1700px) {
+    .cabecalho {
+        padding: 16px 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cabecalho {
+        padding: 16px 5%;
+        flex-wrap: wrap; /*permite a quebra de linhas*/
+        row-gap: 25px; /*espaçamento entre as linhas*/
+    }
+    .cabecalho__local {
+        order: 1; /*muda a ordem do input para que fique no fim*/
+        width: 100%;
+    }
+    .cabecalho__local::placeholder {
+        font-size: var(--font-size-m);
+    }
+    .cabecalho__icones {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .cabecalho__link {
+        display: none;
+    }
+    .cabecalho__menu {
+        display: block;
+        position: relative; /*necessário para o menu hamburguer*/
+    }
+    .cabecalho__menu__botao {
+        cursor: pointer; /*mostrar mãozinha em hover*/
+    }
+    .cabecalho__menu__botao img {
+        transition: 0.5s ease;
+    }
+    .cabecalho__menu__botao:hover img {
+        scale: 1.25;
+    }
+    .cabecalho__menu__lista {
+        position: absolute; /*necessário para o menu hamburguer*/
+        list-style: none;
+        width: 100vw;
+        background-color: var(--cor-de-fundo-input);
+        left: -25px;
+        top: 50px;
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 10px;
+
+        max-height: 0; /*altua inicial da lista 0*/
+        opacity: 0; /*deixa a lista transparente*/
+        overflow: hidden; /*evita que os elementos da lista apareçem*/
+        transition: all 0.5s ease; /*transição*/
+        transform: translateY(-10px); /*monimento*/
+    }
+    .cabecalho__menu__lista a {
+        text-decoration: none;
+        color: var(--cor-texto);
+        text-decoration: none;
+        font-family: var(--fonte-texto);
+        font-size: var(--font-size-s);
+        font-weight: 400;
+        transition: 0.5s ease;
+    }
+    .cabecalho__menu__lista a:hover {
+        font-weight: 600;
+    }
+    #menu:checked ~ .cabecalho__menu__lista {
+        display: flex;
+        max-height: 150px; /*altura da lista após aberta*/
+        opacity: 1; /*reexibe a lista*/
+        transform: translateY(0); /*monimento*/
+    }
+}

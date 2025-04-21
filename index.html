@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luz e cena</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/cartaz.css" />
+    <link rel="stylesheet" href="./styles/filme-lista.css" />
+    <link rel="stylesheet" href="./styles/combo.css" />
+    <link rel="stylesheet" href="./styles/newsletter.css" />
+    <link rel="stylesheet" href="./styles/separador.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="cabecalho">
+        <div class="cabecalho__menu">
+          <input type="checkbox" id="menu">
+          <label for="menu">
+            <span class="cabecalho__menu__botao">
+              <img src="images/menu.svg" alt="menu">
+            </span>
+          </label>          
+          <ul class="cabecalho__menu__lista">
+            <li><a href="">Eventos</a></li>
+            <li><a href="">Club fidelidade</a></li>
+            <li><a href="">Sobre nós</a></li>          
+          </ul>
+        </div>  
+        <a href="#" class="cabecalho__logo">
+          <img src="images/Logo.svg" alt="Logo Luz e Cena">
+        </a>
+        <a href="#" class="cabecalho__link">Eventos</a>
+        <a href="#" class="cabecalho__link">Club fidelidade</a>
+        <a href="#" class="cabecalho__link">Sobre nós</a>
+        <input class="cabecalho__local" type="search" placeholder="São José dos Campos">
+        <div class="cabecalho__icones">
+          <a href="#" class="cabecalho__icones__icones">
+            <img src="images/Carrinho.svg" alt="Carrinho de compras">
+          </a>
+          <a href="#" class="cabecalho__icones__icones">
+            <img src="images/Perfil.svg" alt="Meu perfil">
+          </a>
+        </div>
+      </nav>      
+    </header>
+
+    <section class="banner">
+      <div class="banner__container">
+        <h2 class="banner__container__texto">Onde a<br>realidade<br><span>encontra a<br>fantasia!</span></h2>
+      </div>
+    </section>
+
+    <section class="cartaz">
+      <div class="cartaz__abas">
+        <a class="cartaz__abas__ativo" href="#">Em cartaz</a>
+        <a href="#">Em breve</a>
+      </div>
+
+      <div class="cartaz__busca">
+        <input type="search" placeholder="Digite sua busca">
+      </div>
+
+      <h2 class="cartaz__emcartaz">Em cartaz</h2>           
+
+      <div class="cartaz__posters">
+        <a class="cartaz__posters__poster" href="#">
+          <div class="cartaz__posters__imagem">
+            <img src="images/poster/oNexusDoTempo.png" alt="Poster de O Nexus do Tempo">
+          </div>
+          <h3 class="cartaz__posters__titulo">O nexus do Tempo</h3>
+          <div class="cartaz__posters__descricao">
+            <p class="cartaz__posters__genero">Ficção cientifica</p>
+            <p class="cartaz__posters__duracao">105 minutos</p>
+            <p class="cartaz__posters__tipo tipo-3d">3D</p>
+            <p class="cartaz__posters__class class-amarelo">10 anos</p>
+          </div>
+        </a>
+        <a class="cartaz__posters__poster" href="#">
+          <div class="cartaz__posters__imagem">
+            <img src="images/poster/amanhecer.png" alt="Poster de Amanhecer">
+          </div>
+          <h3 class="cartaz__posters__titulo">Amanhecer</h3>
+          <div class="cartaz__posters__descricao">
+            <p class="cartaz__posters__genero">Romance</p>
+            <p class="cartaz__posters__duracao">90 minutos</p>
+            <p class="cartaz__posters__tipo tipo-2d">2D</p>
+            <p class="cartaz__posters__class class-livre">Livre</p>
+          </div>
+        </a>
+        <a class="cartaz__posters__poster" href="#">
+          <div class="cartaz__posters__imagem">
+            <img src="images/poster/amigosDoBosque.png" alt="Poster de Amigos do Bosque Mágico">
+          </div>
+          <h3 class="cartaz__posters__titulo">Amigos do Bosque Mágico</h3>
+          <div class="cartaz__posters__descricao">
+            <p class="cartaz__posters__genero">Animação</p>
+            <p class="cartaz__posters__duracao">80 minutos</p>
+            <p class="cartaz__posters__tipo tipo-2d">2D</p>
+            <p class="cartaz__posters__class class-livre">Livre</p>
+          </div>
+        </a>
+        <a class="cartaz__posters__poster" href="#">
+          <div class="cartaz__posters__imagem">
+            <img src="images/poster/caminhoParaOAbismo.png" alt="Poster de Caminho para o Abismo">
+          </div>
+          <h3 class="cartaz__posters__titulo">Caminho para o Abismo</h3>
+          <div class="cartaz__posters__descricao">
+            <p class="cartaz__posters__genero">Horror</p>
+            <p class="cartaz__posters__duracao">103 minutos</p>
+            <p class="cartaz__posters__tipo tipo-2d">2D</p>
+            <p class="cartaz__posters__class class-amarelo">14 anos</p>
+          </div>
+        </a>
+        <a class="cartaz__posters__poster" href="#">
+          <div class="cartaz__posters__imagem">
+            <img src="images/poster/desastresDoEscritorio.png" alt="Poster de Desastres do Escritório">
+          </div>
+          <h3 class="cartaz__posters__titulo">Desastres do Escritório</h3>
+          <div class="cartaz__posters__descricao">
+            <p class="cartaz__posters__genero">Comédia</p>
+            <p class="cartaz__posters__duracao">85 minutos</p>
+            <p class="cartaz__posters__tipo tipo-2d">2D</p>
+            <p class="cartaz__posters__class class-livre">Livre</p>
+          </div>
+        </a>
+        <a class="cartaz__posters__poster" href="#">
+          <div class="cartaz__posters__imagem">
+            <img src="images/poster/mestresDoFuturo.png" alt="Poster de Mestres do Futuro">
+          </div>
+          <h3 class="cartaz__posters__titulo">Mestres do Futuro</h3>
+          <div class="cartaz__posters__descricao">
+            <p class="cartaz__posters__genero">Documentário</p>
+            <p class="cartaz__posters__duracao">120 minutos</p>
+            <p class="cartaz__posters__tipo tipo-2d">2D</p>
+            <p class="cartaz__posters__class class-livre">Livre</p>
+          </div>
+        </a>
+        <a class="cartaz__posters__poster" href="#">
+          <div class="cartaz__posters__imagem">
+            <img src="images/poster/laEsperanza.png" alt="Poster de La Esperanza">
+          </div>
+          <h3 class="cartaz__posters__titulo">La Esperanza</h3>
+          <div class="cartaz__posters__descricao">
+            <p class="cartaz__posters__genero">Drama</p>
+            <p class="cartaz__posters__duracao">98 minutos</p>
+            <p class="cartaz__posters__tipo tipo-2d">2D</p>
+            <p class="cartaz__posters__class class-amarelo">12 anos</p>
+          </div>
+        </a>
+        <a class="cartaz__posters__poster" href="#">
+          <div class="cartaz__posters__imagem">
+            <img src="images/poster/amigoDaSombra.png" alt="Poster de Amigo da Sombra">
+          </div>
+          <h3 class="cartaz__posters__titulo">Amigo da Sombra</h3>          
+          <div class="cartaz__posters__descricao">
+            <p class="cartaz__posters__genero">Suspense</p>
+            <p class="cartaz__posters__duracao">110 minutos</p>
+            <p class="cartaz__posters__tipo tipo-2d">2D</p>
+            <p class="cartaz__posters__class class-amarelo">12 anos</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="combo">
+      <div class="combo__container">
+        <h3>Combo<br><span>Dragon's<br>Ascent</span></h3>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h3 class="newsletter__titulo">Inscreva-se para ganhar descontos!</h3>
+      <div class="newsletter__cadastro">
+        <input class="newsletter__input" type="email" placeholder="Digite seu email">
+        <button class="newsletter__botao">Inscrever</button>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="rodape__superior"></div>
+      
+      <nav class="rodape__meio">
+        <div class="rodape__marca">
+          <img src="images/Logo-white.svg" alt="Logo Luz & Cena">
+          <p>Onde a realidade encontra a fantasia!</p>
+        </div>
+        <div class="rodape__nav">
+          <div class="rodape__nav__secao">
+            <h4>Funcionamento</h4>
+            <p class="rodape__nav__item">Segunda a Sexta - 16h à 00h</p>
+            <a class="rodape__nav__link" href="mailto:ola@luzecena.com.br">ola@luzecena.com.br</a>
+            <a class="rodape__nav__link" href="tel:+550800541320">0800 541 320</a>
+          </div>
+          <div class="rodape__nav__secao">
+            <h4>Institucional</h4>
+            <a class="rodape__nav__link" href="#">Sobre nós</a>
+            <a class="rodape__nav__link" href="#">Para empresas</a>
+            <a class="rodape__nav__link" href="#">Club fidelidade</a>
+          </div>
+          <div class="rodape__nav__secao">
+            <h4>Siga nossas redes!</h4>
+            <div class="rodape__nav__redes">
+              <a class="rodape__nav__icone" href="#"><img src="images/Whatsapp.svg" alt="Whatsapp"></a>
+              <a class="rodape__nav__icone" href="#"><img src="images/Instagram.svg" alt="Instagram"></a>
+              <a class="rodape__nav__icone" href="#"><img src="images/Tiktok.svg" alt="Tiktok"></a>
+            </div>
+          </div>
+        </div>        
+      </nav>
+
+      <div class="rodape__inferior">
+        <p>Desenvolvido por <a href="https://github.com/thyagoramon" target="_blank">Thyago Ramon</a>. Projeto fictício sem fins comerciais.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
