@@ -1,17 +1,20 @@
-![CSS Flex](https://imgur.com/ytMIIUO.png)
+# Luz & Cena
 
-# CSS Flexbox
+Home page de uma rede de cinemas fictícia, desenvolvida ao longo da formação em front-end "CSS avançado: implementando designs com Grid, Flexbox e Sass" da Alura. A página contém um menu de navegação no cabeçalho, banner, vitrine com os filmes em cartaz, seção de cadastro para a newsletter e rodapé com links.
 
-Página inicial do Luz e Cena.
+![luz   cena](https://github.com/user-attachments/assets/df2d7e13-3ceb-4a62-8724-4e047d302c27)
 
-## 🔨 Funcionalidades do Projeto
+[Clique aqui para visualizar a página](https://thyagoramon.github.io/Luz-e-Cena/)
 
-A página possui um cabeçalho, um banner, uma lista de filmes, uma seção de newsletter e um rodapé.
+## Funcionalidades da página
+- Responsividade em diferentes tamanhos de tela: desktop, tablet e smartphone.
+- Header com links de navegação, campo para pesquisa e menu suspenso na versão mobile.
+- Vitrine de exposição dos filmes em cartaz.
+- Campo de cadastro para newslatter.
+- Rodapé completo com diferentes informações e links úteis.
+- Efeitos decorativos ao posicionar o cursos (hover).
 
-## ✔️ Técnicas e Tecnologias Utilizadas
-
-As principais técnicas e tecnologias utilizadas neste projeto são:
-
+## Técnicas e tecnologias utilizadas
 - **`HTML`**: Linguagem de marcação utilizada para estruturar o conteúdo das páginas web.
 - **`CSS`**: Utilizado para estilizar a apresentação da página web.
   - **`CSS Flexbox`**: Utilizado para organizar elementos de forma flexível e responsiva, garantindo um layout moderno e adaptável. Abaixo estão os principais atributos utilizados do Flexbox:
@@ -28,20 +31,3 @@ As principais técnicas e tecnologias utilizadas neste projeto são:
     - **`flex-basis`**: Define o tamanho inicial do item antes de o espaço disponível ser distribuído.
     - **`flex`**: Combina `flex-grow`, `flex-shrink` e `flex-basis` em uma única propriedade para maior simplicidade.
     - **`align-self`**: Permite modificar o alinhamento de um item específico, substituindo o valor definido em `align-items` para aquele item.
-
-Esses atributos são essenciais para criar um layout flexível, garantindo que a página seja responsiva e adaptável a diferentes tamanhos de tela e dispositivos.
-
-## 📁 Acesso ao Projeto
-
-Você pode [acessar o código-fonte do projeto inicial](https://github.com/monicahillman/3992-css-grid/tree/projeto-base) ou [baixá-lo](https://github.com/monicahillman/3992-css-grid/archive/refs/heads/projeto-base.zip).
-
-## 🛠️ Como Abrir e Rodar o Projeto
-
-Após baixar o projeto, você pode abri-lo no Visual Studio Code. Para isso, siga os passos abaixo:
-
-1. No menu superior do VS Code, clique em:
-   * **File > Open Folder** (ou uma opção similar).
-2. Procure o local onde o projeto foi salvo e selecione a pasta (se o projeto foi baixado como um arquivo ZIP, será necessário extraí-lo antes).
-3. Clique em **OK**.
-
-Após finalizar esses passos, você pode executar a aplicação usando a extensão **Live Server** 🏆. Isso facilitará a visualização do projeto em seu navegador e garantirá que as alterações sejam refletidas automaticamente.
