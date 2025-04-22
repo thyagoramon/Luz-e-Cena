@@ -10,7 +10,7 @@ Home page de uma rede de cinemas fictícia, desenvolvida ao longo da formação 
 - Responsividade em diferentes tamanhos de tela: desktop, tablet e smartphone.
 - Header com links de navegação, campo para pesquisa e menu suspenso na versão mobile.
 - Vitrine de exposição dos filmes em cartaz.
-- Campo de cadastro para newslatter.
+- Campo de cadastro para newsletter.
 - Rodapé completo com diferentes informações e links úteis.
 - Efeitos decorativos ao posicionar o cursos (hover).
 
